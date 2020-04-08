@@ -1,0 +1,244 @@
+body, html {
+    margin: 0;  
+    background-color: #8a8585;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.8;
+    color: white;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://images.unsplash.com/photo-1496243975092-6ec259c776e2?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+    min-height: 100vh;
+  z-index: -1;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    min-height: 400px;
+}
+
+/* ======= navbar styles ======= */
+.fixed-top {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #0e1111;
+  color: #fff;
+  flex-wrap: nowrap;
+  z-index: 2;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+ .linksOnLarge {
+   display: none;
+  padding: 10px 15px;
+}
+
+.bars {
+  margin-left: auto;
+  clear: right;
+  
+}
+.navOnSmallContainer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-top: 48px;
+}
+
+.onSmallLinks {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.linksOnSmall:hover {
+  background: #0e1111;
+}
+
+.mainHeader {
+  padding: 80px 20%;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+}
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+}
+h2 {
+  font-size: 34px;
+  font-family: 'Permanent Marker', cursive;
+}
+h3 {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+/* ======= /navbar styles ======= */
+
+#about header {
+  margin: 0 10%;
+  text-align: center;
+}
+#about article,
+#portfolio article ,
+#contactInfo article header {
+  margin: 0 5%;
+  text-align: center;
+}
+
+.skills {
+  display: inline-block;
+  font-weight: bold;
+  list-style-type: none;
+
+}
+
+.contact-info {
+  margin-left: 5%;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+.picOfMe {
+  position: center;
+  border-radius: 5%;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.25em;
+  color: white;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.35em;
+}
+#googleMap {
+  border-radius: 3%;
+  margin: 0 5%;
+  
+  -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(75%);
+}
+/* ======= footer ======= */
+footer {
+  text-align: center;
+  background: #0e1111;
+  z-index: -1;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.button-to-top {
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background: rgb(124, 124, 124);
+}
+.button-to-top:hover {
+  background: #000;
+  color: #fff;
+}
+#social-icons a { 
+  color: white;
+}
+#social-icons a:hover {
+  color: 	#3783f5;
+}
+
+#social-icons {
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+/* ======= @media queries ======= */
+@media (min-width: 600px) {
+  .bars {
+    display:none;
+  }
+  .linksOnLarge {
+    display: block;
+  }
+  .picOfMe {
+    width: 75%;
+    height: auto;
+  }
+  .sideBySideMapInfo {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 990px) {
+  #about article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pic bio"
+                         "skills skills"
+  }
+  h1{
+    font-size: 64px;
+  }
+  .mainHeader {
+    padding: 120px 20%;
+  }
+  #about article figure {
+    grid-area: pic;
+  }
+  .bio {
+    grid-area: bio;
+    margin-top: 55px;
+  }
+  
+  .skillsResponsive {
+    grid-area: skills;
+  }
+
+  .bioIntro{
+    width: 60%;
+    margin: 0 auto;
+    }
+  .skills{
+    background-color: rgb(66, 65, 65);
+    width: 20%;
+    border-radius: 5%;
+  }
+  .iframes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+   
+  }
+}

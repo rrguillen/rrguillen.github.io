@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="fixed-top">
+        <a href="#home" onclick="toggleOff()">HOME</a>
+        <div class="linksOnLarge">
+          <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+          <a href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
+          <a href="#contact" ><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <a class="bars" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+       </a>
+      </nav>
+      <!-- Navbar on small screens -->
+        <div id="navOnSmall" class="navOnSmallContainer">
+            <a href="#about" class="linksOnSmall" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="linksOnSmall" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="linksOnSmall" onclick="toggleFunction()">CONTACT</a>
+        </div><!-- /Navbar on small screens -->
+      <div class="bgimg-1" id="home">
+        <div class="mainHeader">
+          <h1>RAYMOND RAMOS<br> SELF TAUGHT <br>WEB DEVELOPER</h1>
+        </div>
+      </div>
+    </header><!-- /navbar -->
+
+    <section id="about">
+      <header>
+        <h3>About Me</h3>
+        <div class="bioIntro">
+          <p>Welcome to my portfolio site my name is Raymond, and I'm a self taught web developer seeking to perfect my current skills and continue to grow as a developer.</p>
+        </div>
+      </header>
+      <article>
+        <figure>
+          <p><b><i class="fa fa-user"></i> Raymod Ramos</b></p><br>
+          <img class="picOfMe" src="img/picOfMe.JPG" alt="Photo of Me" width="100%" height="auto">
+        </figure>
+        <div class="bio">
+        <p>For the past year I have been teaching myself web developing and although it has been difficult, I enjoy learning new skills.</p>
+        <p>I'am looking to continue developing my skills, and also find new challenges that will allow me to learn new technologies as I plan to continue my studies to become a full stack developer. I always though of myself as a fast learner, especially when it comes to my job, I value my work and take pride on what I produce, that is why now I feel like I have learned some skills that would be of value to the right company.</p>
+        <p>I always want to stay ahead of the curve, so I'm always learning new languages and features within an existing language that I know. Right now I'm familiarizing myself with REACT, and continuing with the back end of developing .</p>
+        </div>
+        <div class="skillsResponsive">
+          <h4>My Skills:</h4>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+          </ul>
+          <ul class="skills">
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>Node.JS</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section id="portfolio">
+      <header class="bgimg-2">
+        <div class="mainHeader"><h2>Portfolio</h2></div>
+      </header>
+      <article>
+        <header>
+          <h3>MY WORK</h3>
+  <p><em>Here are some of my latest projects.</em></p>
+        </header>
+        <div class="iframes"><!-- container for iframe section -->
+          <div> <!-- project1 -->
+            <img src="img/tattoo.png" height="400" width="100%">
+            
+            <div style="width: 100%;">
+              <h4>Website for a local Tattoo artist</h4>
+              <p>This is a page I built for a local tattoo artist that is just starting up and wanted to have a website to show some of his work.</p>
+                <a href="https://rrguillen.github.io/tattoo/" target="_blank">Visit the Page</a>
+            </div>
+          </div> <!-- /project1 -->
+          <div> <!-- project2 -->
+            <img src="img/eveWeb.png" height="400" width="100%">
+            <div style="width: 100%;">
+              <h4>CSS Grid site example</h4>
+              <p>This is a fully responsive site using CSS grid standars, it was first develop for mobile devices and it uses @media queries for responsiveness on larger devices.</p>
+              <a href="https://rrguillen.github.io/eve-web/" target="_blank">Visit the responsive CSS Grid site</a>
+            </div>
+          </div> <!-- /project2 -->
+          <div> <!-- project3 -->
+            <img src="img/yelpCamp.png" height="400" width="100%">
+            <div style="width: 100%;">
+              <h4>YelpCamp</h4>
+              <p>YelpCamp is a complex application I built from scratch following along a Udemy video. On the front-end: HTML5, CSS3, JavaScript, Bootstrap for responsive layout, and jQuery. On the back-end: NodeJS, NPM, ExpressJS, REST, Authentication, Authorization and PassportJS. For datastore I used non-sql MongoDB. The application was developed on Cloud9 IDE and source versioned with GIT. The application is hosted on Heroku servers and MongoLab</p>
+              <p>You can log in as admin with Username: username Password: yelpcamp</p>
+              <a href="https://thawing-bastion-32425.herokuapp.com/" target="_blank">Visit YelpCamp</a>
+            </div>
+          </div> <!-- /project3 -->
+          <div> <!-- project4 -->
+            <img src="img/gridBizLayout.png" height="400" width="100%">
+            
+            <div style="width: 100%;">
+              <h4>A business layout responsive site using the CSS grid</h4>
+              <p></p>
+                <a href=" https://rrguillen.github.io/business-layout/" target="_blank">Visit the Business Layout site</a>
+            </div>
+          </div> <!-- /project4 -->
+          <div> <!-- project5 -->
+            <img src="img/pawsome.png" height="400" width="100%">
+            <div style="width: 100%;">
+              <h4>Landing Page</h4>
+              <p>This is a simple Landing Page layout done with bootstraps and google fonts.</p>
+                <a href="https://rrguillen.github.io/pawsomee/" target="_blank">Visit Landing Page layout</a>
+            </div>
+          </div> <!-- /project5 -->
+          <div> <!-- project6 -->
+            <iframe src="https://codepen.io/d_ray_mon_D/full/Xezwwb/" height="400" width="100%"></iframe>
+            <div style="width: 100%;">
+              <h4>Local Weather App</h4>
+              <p>The Local Weather application firsts uses geolocation to get the users current location and then with the .getJSON() it loads JSON-encoded data from the server using a GET HTTP request. </p>
+                <a href="https://codepen.io/d_ray_mon_D/full/Xezwwb/" target="_blank">Visit the Local Weather application</a>
+            </div>
+          </div> <!-- /project6 -->
+
+        </div> <!-- /iframe section -->
+      </article>
+    </section>
+    <section id="contactInfo">
+      <header class="bgimg-3">
+        <div class="mainHeader"><h2>Contact</h2></div>
+      </header>
+      <article id="contact">
+        <header>
+          <h3 class="">WHERE I WORK</h3>
+          <p class=""><em>I'd love your feedback!</em></p>
+        </header>
+        <div class="sideBySideMapInfo"><!-- container for contact info and map -->
+          <!-- Add Google Maps -->
+          <div>
+            <iframe id ="googleMap" style="width:90%;height:400px;"    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106170.22587741166!2d-118.35361013389142!3d33.73948177753818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd35ae16ed8aa5%3A0x4147d57f086875f!2sSan%20Pedro%2C%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1586217390551!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           
+          </div><!-- /google maps -->
+          <div class="contact-info"> <!-- contact info -->
+
+              <i class="fa fa-map-marker fa-fw"></i> Los Angeles, CA<br>
+              <i class="fa fa-phone fa-fw"></i> Phone: 310 613 8233<br>
+              <i class="fa fa-envelope fa-fw"></i> Email: draymondrg@gmail.com<br>
+
+          </div><!-- /contact info -->
+        </div><!-- /container for info and map-->
+      </article>
+    </section>
+    <footer>
+      <a href="#home" class="button-to-top"><i class="fa fa-arrow-up"></i>To the top</a>
+      <div id="social-icons">
+        <a href="https://github.com/rrguillen" target="_blank"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.freecodecamp.org/draymondrg" target="_blank"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
