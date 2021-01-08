@@ -1,11 +1,17 @@
 body, html {
     margin: 0;  
-    background-color: #8a8585;
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.8;
-    color: white;
-}
+    /* background-color: #8a8585;
+    color: white; */
+    
 
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    
+}
+html {
+  scroll-behavior: smooth;
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -88,11 +94,11 @@ header a {
 h1 {
   font-weight: 400;
   font-size: 40px;
-  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Permanent Marker', cursive; */
 }
 h2 {
   font-size: 34px;
-  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Permanent Marker', cursive; */
 }
 h3 {
   text-decoration: underline;
@@ -104,11 +110,15 @@ h3 {
   margin: 0 10%;
   text-align: center;
 }
+
+#about,
 #about article,
 #portfolio article ,
-#contactInfo article header {
+#contactInfo article header,
+.sideBySideMapInfo {
   margin: 0 5%;
   text-align: center;
+  background-color: rgb(247, 247, 247);
 }
 
 .skills {
@@ -121,6 +131,7 @@ h3 {
 .contact-info {
   margin-left: 5%;
   margin-bottom: 100px;
+  text-align: left;
   font-weight: bold;
 }
 
@@ -130,13 +141,13 @@ h3 {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(6, 30, 248);
 }
 
 p {
   font-weight: 600;
   font-size: 1.25em;
-  color: white;
+  /* color: white; */
 }
 
 li {
@@ -149,7 +160,6 @@ h4 {
 #googleMap {
   border-radius: 3%;
   margin: 0 5%;
-  
   -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
   filter: grayscale(75%);
 }
@@ -196,7 +206,7 @@ footer {
     height: auto;
   }
   .sideBySideMapInfo {
-    margin: 10px auto;
+    /* margin: 10px auto; */
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -204,10 +214,17 @@ footer {
 @media (min-width: 990px) {
   #about article {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "pic bio"
-                         "skills skills"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "pic bio bio"
+                         "skills skills skills"
   }
+#about,
+#about article,
+#portfolio article ,
+#contactInfo article header,
+.sideBySideMapInfo {
+  margin: 0 10%;
+}
   h1{
     font-size: 64px;
   }
@@ -230,10 +247,11 @@ footer {
     width: 60%;
     margin: 0 auto;
     }
+
   .skills{
-    background-color: rgb(66, 65, 65);
+    /* background-color: rgb(66, 65, 65); */
     width: 20%;
-    border-radius: 5%;
+    /* border-radius: 5%; */
   }
   .iframes {
     display: grid;
@@ -241,4 +259,5 @@ footer {
     grid-gap: 20px;
    
   }
+
 }
